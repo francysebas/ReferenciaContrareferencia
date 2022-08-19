@@ -22,7 +22,7 @@ class TipoIdentificacion(models.Model):
     def __str__(self):
         return self.nombre
 
-
+/* comentario*/
 class Acompanante(models.Model):
     tipoIdentificacion = models.ForeignKey(TipoIdentificacion, on_delete=models.CASCADE)
     numIdentificacion = models.CharField('Número identificación', max_length=50)
